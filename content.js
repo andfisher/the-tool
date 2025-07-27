@@ -1,5 +1,4 @@
 function theTool() {
-    console.info('Load the tool',  document.querySelectorAll('[id^="sp_message_container"], [class^="overlay_"]'));
     document.querySelectorAll('html, body').forEach(el => {
         el.classList.remove('sp-message-open');
         el.classList.add('allow-scroll');
@@ -22,4 +21,3 @@ function theTool() {
 
 theTool();
 setInterval(theTool, 2000);
-  
